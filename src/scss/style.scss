@@ -285,3 +285,57 @@
       }
    }
 }
+
+.capability {
+   min-height: 900px;
+   position: relative;
+
+   &__divide {
+      background-color: #ffffff;
+      color: #000000;
+   }
+   &__title {
+      font-size: 38px;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-top: 32px;
+   }
+   &__subtitle {
+      font-size: 17px;
+      font-weight: normal;
+      text-align: center;
+      color: #ffffff;
+      margin-top: 10px;
+   }
+
+   &__subtitle-bm {
+      width: 297px;
+      height: 42px;
+      margin: 0 auto;
+      font-size: 17px;
+      font-weight: 300;
+      color: #222222;
+      text-align: center;
+      padding: 217px 0 138px 0;
+   }
+
+   &__background {
+      height: 499px;
+      padding-top: 57px;
+      background-color: #000000;
+   }
+   &__background-bm {
+      height: 397px;
+      background: url("../img/bd/main.jpg") center (center / cover) no-repeat;
+   }
+   &__car {
+      width: 790px;
+      height: 267px;
+      position: absolute;
+      top: 231px;
+      left: 50%;
+      transform: translateX(-50%);
+   }
+}
