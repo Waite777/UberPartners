@@ -346,6 +346,47 @@
    }
 }
 
+.demand {
+   min-height: 919px;
+   padding: 68px 0 50px 0;
+
+   &__box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+   }
+   &__picking {
+      width: 520px;
+      padding: 33px;
+   }
+   &__title {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.51;
+      color: #1ca8c3;
+      &-red {
+         color: #ff5656;
+      }
+   }
+   &__text {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 1.61;
+      color: #222222;
+      margin: 14px 14px 14px 14px;
+      background: url("../img/icon/blue_check.png") 0px 6px no-repeat;
+      padding: 0 0 0 30px;
+      &-red {
+         background: url("../img/icon/red_check.png") 0px 6px no-repeat;
+      }
+   }
+   &__info {
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 1.51;
+      color: #1ca8c3;
+   }
+}
 .world {
    min-height: 717px;
    padding: 49px;
