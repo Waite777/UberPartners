@@ -3,6 +3,17 @@
    box-sizing: border-box;
 }
 
+@mixin btn_hover {
+   &:hover {
+      background-image: linear-gradient(to top, #12697a, #3babc2);
+   }
+}
+
+a:hover {
+   color: #ffffff;
+   text-decoration: none;
+}
+
 .header {
    position: relative;
    position: fixed;
@@ -27,6 +38,19 @@
    &__item {
       border-right: 2px solid rgb(46, 46, 46);
       padding: 0 3%;
+      &::before {
+         content: "";
+         display: block;
+         height: 1px;
+         width: 0%;
+         background-color: #ffffff;
+         transition: 0.8s all;
+      }
+      &:hover {
+         &::before {
+            width: 100%;
+         }
+      }
    }
 
    &__link {
@@ -89,9 +113,7 @@
       font-weight: 400;
       text-transform: uppercase;
       color: #ffffff;
-      &:hover {
-         background-image: linear-gradient(to top, #12697a, #3babc2);
-      }
+      @include btn_hover;
    }
 }
 
@@ -137,9 +159,7 @@
       font-weight: 400;
       text-transform: uppercase;
       color: #ffffff;
-      &:hover {
-         background-image: linear-gradient(to top, #12697a, #3babc2);
-      }
+      @include btn_hover;
    }
 }
 
@@ -357,7 +377,7 @@
    }
    &__picking {
       width: 520px;
-      padding: 33px;
+      margin: 33px;
    }
    &__title {
       font-size: 22px;
