@@ -43,7 +43,7 @@ a:hover {
          display: block;
          height: 1px;
          width: 0%;
-         background-color: #ffffff;
+         background-color: #1eacc7;
          transition: 0.8s all;
       }
       &:hover {
@@ -425,14 +425,16 @@ a:hover {
 }
 
 .line {
-   border: none; /* Убираем границу */
-   background-color: #1fbad6; /* Цвет линии */
-   color: #1fbad6; /* Цвет линии для IE6-7 */
+   width: 300px;
+   border: none;
+   background-color: #1fbad6;
+   color: #1fbad6;
    height: 4px;
-   margin: 0 auto;
+   margin: 14px auto;
    &__black {
-      background-color: #000000; /* Цвет линии */
-      color: #000000; /* Цвет линии для IE6-7 */
+      width: 100%;
+      background-color: #000000;
+      color: #000000;
    }
 }
 
@@ -460,6 +462,9 @@ footer {
          margin-right: 7px;
          border-radius: 100%;
          background-color: #000000;
+         &:hover {
+            background-color: #1fbad6;
+         }
       }
 
       &__img {
@@ -481,6 +486,10 @@ footer {
             color: #070716;
             text-decoration: none;
             margin: 0 23px 0 23px;
+            &:hover {
+               font-weight: 700;
+               margin: 0 22px 0 22px;
+            }
          }
       }
 
@@ -499,7 +508,7 @@ footer {
          }
       }
 
-      .language {
+      .lang {
          display: flex;
          justify-content: center;
          margin-top: 19px;
