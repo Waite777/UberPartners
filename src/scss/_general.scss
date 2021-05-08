@@ -109,6 +109,10 @@ a:hover {
    }
 }
 
+.xs-visible {
+   display: none;
+}
+
 .promo {
    max-height: 800px;
    background: url("../img/bd/header.jpg") center (center / cover) no-repeat;
@@ -193,7 +197,7 @@ a:hover {
       justify-content: center;
       align-items: center;
       margin-top: 35px;
-      width: 630px;
+      //width: 630px;
    }
 
    &__img-box {
@@ -326,6 +330,10 @@ a:hover {
       text-align: center;
       color: #ffffff;
       margin-top: 10px;
+   }
+
+   &__subtitle-none {
+      display: none;
    }
 
    &__subtitle-bm {
