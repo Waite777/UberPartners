@@ -437,7 +437,12 @@
    .menu {
       height: 39px;
       &__link {
-         font-size: 16px;
+         display: block;
+         font-size: 15px;
+      }
+      &__item {
+         width: 100%;
+         text-align: center;
       }
    }
 
@@ -457,7 +462,7 @@
       }
 
       &__logo {
-         margin-top: 23px;
+         margin-top: 15px;
       }
 
       &__phone {
@@ -617,7 +622,6 @@
 
    footer {
       .navigation {
-         
          .info {
             margin-top: 8px;
 
@@ -626,7 +630,6 @@
                margin: 0 2px 0 2px;
             }
          }
-         
       }
    }
 }
